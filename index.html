@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coastal Horizon Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Coastal Horizon Hotel Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#rooms">Rooms & Suites</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#offers">Special Offers</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="videos/hero-background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1 class="animate__animated animate__fadeIn">Welcome to Coastal Horizon Hotel</h1>
+      <p class="animate__animated animate__fadeIn animate__delay-1s">Experience luxury by the sea. Your perfect getaway awaits.</p>
+      <a href="#rooms" class="cta-button animate__animated animate__fadeIn animate__delay-2s">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <h2 class="animate__animated animate__fadeInUp">About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Welcome to Coastal Horizon Hotel</h3>
+        <p>Nestled along the pristine coastline, Coastal Horizon Hotel offers a serene escape with breathtaking ocean views, world-class amenities, and unparalleled hospitality. Since 2005, we have been dedicated to providing our guests with unforgettable experiences.</p>
+        <p>Our mission is to create a harmonious blend of luxury, comfort, and sustainability. From our eco-friendly practices to our personalized services, every detail is designed to make your stay exceptional.</p>
+        <ul class="about-features">
+          <li><i class="fas fa-check"></i> Luxurious rooms with ocean views</li>
+          <li><i class="fas fa-check"></i> Award-winning dining experiences</li>
+          <li><i class="fas fa-check"></i> State-of-the-art wellness facilities</li>
+          <li><i class="fas fa-check"></i> Eco-friendly and sustainable practices</li>
+        </ul>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <h4>18+</h4>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat">
+          <h4>200+</h4>
+          <p>5-Star Reviews</p>
+        </div>
+        <div class="stat">
+          <h4>95%</h4>
+          <p>Guest Satisfaction</p>
+        </div>
+        <div class="stat">
+          <h4>50+</h4>
+          <p>Team Members</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms & Suites -->
+  <section id="rooms" class="rooms">
+    <h2 class="animate__animated animate__fadeInUp">Rooms & Suites</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Discover our luxurious accommodations designed for comfort and style.
+    </p>
+    <div class="room-grid">
+      <!-- Deluxe Room -->
+      <div class="room-card animate__animated animate__fadeInLeft" data-modal="deluxe-room-modal">
+        <div class="room-image">
+          <img src="images/room1.jpg" alt="Deluxe Room">
+          <div class="room-overlay">
+            <a href="#deluxe-room-modal" class="room-button" data-modal="deluxe-room-modal">View Details</a>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p class="room-price">From <span>$299</span>/night</p>
+          <p class="room-description">
+            Experience luxury with a private balcony offering stunning ocean views. Perfect for couples or solo travelers.
+          </p>
+          <ul class="room-features">
+            <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+            <li><i class="fas fa-coffee"></i> Complimentary Breakfast</li>
+            <li><i class="fas fa-tv"></i> Smart TV</li>
+          </ul>
+          <a href="#footer" class="cta-button">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Executive Suite -->
+      <div class="room-card animate__animated animate__fadeInUp" data-modal="executive-suite-modal">
+        <div class="room-image">
+          <img src="images/room2.jpg" alt="Executive Suite">
+          <div class="room-overlay">
+            <a href="#executive-suite-modal" class="room-button" data-modal="executive-suite-modal">View Details</a>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3>Executive Suite</h3>
+          <p class="room-price">From <span>$499</span>/night</p>
+          <p class="room-description">
+            Indulge in spacious luxury with a separate living area, premium amenities, and breathtaking ocean views.
+          </p>
+          <ul class="room-features">
+            <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+            <li><i class="fas fa-hot-tub"></i> Private Jacuzzi</li>
+            <li><i class="fas fa-utensils"></i> Room Service</li>
+          </ul>
+          <a href="#footer" class="cta-button">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Family Suite -->
+      <div class="room-card animate__animated animate__fadeInRight" data-modal="family-suite-modal">
+        <div class="room-image">
+          <img src="images/room3.jpg" alt="Family Suite">
+          <div class="room-overlay">
+            <a href="#family-suite-modal" class="room-button" data-modal="family-suite-modal">View Details</a>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3>Family Suite</h3>
+          <p class="room-price">From <span>$399</span>/night</p>
+          <p class="room-description">
+            Ideal for families, featuring multiple bedrooms, a kitchenette, and plenty of space for everyone to relax.
+          </p>
+          <ul class="room-features">
+            <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+            <li><i class="fas fa-bed"></i> Extra Beds Available</li>
+            <li><i class="fas fa-child"></i> Child-Friendly Amenities</li>
+          </ul>
+          <a href="#footer" class="cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Room Details -->
+  <!-- Deluxe Room Modal -->
+  <div id="deluxe-room-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Deluxe Ocean View Room</h2>
+      <img src="images/room1.jpg" alt="Deluxe Room">
+      <p class="room-price">From $299/night</p>
+      <p>Our Deluxe Ocean View Room offers a luxurious retreat with a private balcony overlooking the ocean. Perfect for couples or solo travelers seeking comfort and elegance.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+        <li><i class="fas fa-coffee"></i> Complimentary Breakfast</li>
+        <li><i class="fas fa-tv"></i> Smart TV</li>
+        <li><i class="fas fa-umbrella-beach"></i> Private Balcony</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Executive Suite Modal -->
+  <div id="executive-suite-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Executive Suite</h2>
+      <img src="images/room2.jpg" alt="Executive Suite">
+      <p class="room-price">From $499/night</p>
+      <p>Indulge in the ultimate luxury with our Executive Suite. Featuring a separate living area, Jacuzzi tub, and premium amenities, this suite is perfect for business or leisure travelers.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+        <li><i class="fas fa-hot-tub"></i> Private Jacuzzi</li>
+        <li><i class="fas fa-utensils"></i> Room Service</li>
+        <li><i class="fas fa-couch"></i> Separate Living Area</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Family Suite Modal -->
+  <div id="family-suite-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Family Suite</h2>
+      <img src="images/room3.jpg" alt="Family Suite">
+      <p class="room-price">From $399/night</p>
+      <p>Our Family Suite is designed with families in mind. With two bedrooms, a kitchenette, and child-friendly amenities, it’s the perfect home away from home.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+        <li><i class="fas fa-bed"></i> Extra Beds Available</li>
+        <li><i class="fas fa-child"></i> Child-Friendly Amenities</li>
+        <li><i class="fas fa-utensils"></i> Kitchenette</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Amenities -->
+  <section id="amenities" class="amenities">
+    <h2 class="animate__animated animate__fadeInUp">Amenities</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Explore our world-class amenities designed for your comfort and relaxation.
+    </p>
+    <div class="amenities-grid">
+      <!-- Infinity Pool -->
+      <div class="amenity-card animate__animated animate__fadeInLeft">
+        <div class="amenity-image">
+          <img src="images/pool.jpg" alt="Infinity Pool">
+          <div class="amenity-overlay">
+            <a href="#infinity-pool-modal" class="amenity-button" data-modal="infinity-pool-modal">View Details</a>
+          </div>
+        </div>
+        <div class="amenity-info">
+          <h3>Infinity Pool</h3>
+          <p>Relax in our stunning infinity pool with panoramic ocean views.</p>
+        </div>
+      </div>
+
+      <!-- Spa & Wellness -->
+      <div class="amenity-card animate__animated animate__fadeInUp">
+        <div class="amenity-image">
+          <img src="images/spa.jpg" alt="Spa & Wellness">
+          <div class="amenity-overlay">
+            <a href="#spa-modal" class="amenity-button" data-modal="spa-modal">View Details</a>
+          </div>
+        </div>
+        <div class="amenity-info">
+          <h3>Spa & Wellness</h3>
+          <p>Rejuvenate with our range of spa treatments and wellness programs.</p>
+        </div>
+      </div>
+
+      <!-- Fitness Center -->
+      <div class="amenity-card animate__animated animate__fadeInRight">
+        <div class="amenity-image">
+          <img src="images/gym.jpg" alt="Fitness Center">
+          <div class="amenity-overlay">
+            <a href="#fitness-center-modal" class="amenity-button" data-modal="fitness-center-modal">View Details</a>
+          </div>
+        </div>
+        <div class="amenity-info">
+          <h3>Fitness Center</h3>
+          <p>Stay active with our state-of-the-art gym facilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Amenities -->
+  <!-- Infinity Pool Modal -->
+  <div id="infinity-pool-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Infinity Pool</h2>
+      <img src="images/pool.jpg" alt="Infinity Pool">
+      <p>Relax in our stunning infinity pool with panoramic ocean views. Perfect for unwinding after a long day.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-umbrella-beach"></i> Ocean View</li>
+        <li><i class="fas fa-cocktail"></i> Poolside Bar</li>
+        <li><i class="fas fa-sun"></i> Sun Loungers</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Spa & Wellness Modal -->
+  <div id="spa-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Spa & Wellness</h2>
+      <img src="images/spa.jpg" alt="Spa & Wellness">
+      <p>Rejuvenate with our range of spa treatments and wellness programs designed to refresh your mind and body.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-spa"></i> Full-Service Spa</li>
+        <li><i class="fas fa-hot-tub"></i> Hot Tub</li>
+        <li><i class="fas fa-leaf"></i> Aromatherapy</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Fitness Center Modal -->
+  <div id="fitness-center-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Fitness Center</h2>
+      <img src="images/gym.jpg" alt="Fitness Center">
+      <p>Stay active with our state-of-the-art gym facilities, equipped with the latest fitness equipment.</p>
+      <ul class="modal-features">
+        <li><i class="fas fa-dumbbell"></i> Modern Equipment</li>
+        <li><i class="fas fa-running"></i> Personal Trainers</li>
+        <li><i class="fas fa-water"></i> Hydration Station</li>
+      </ul>
+      <a href="#contact" class="cta-button modal-book-now">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Special Offers -->
+  <section id="offers" class="offers">
+    <h2 class="animate__animated animate__fadeInUp">Special Offers</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Take advantage of our exclusive deals and packages for a memorable stay.
+    </p>
+    <div class="offer-grid">
+      <!-- Weekend Escape -->
+      <div class="offer-card animate__animated animate__fadeInLeft">
+        <h3>Weekend Escape</h3>
+        <p>Enjoy a 2-night stay with breakfast included.</p>
+        <p class="offer-price">From <span>$499</span></p>
+        <a href="#footer" class="offer-button">Book Now</a>
+      </div>
+
+      <!-- Honeymoon Package -->
+      <div class="offer-card animate__animated animate__fadeInUp">
+        <h3>Honeymoon Package</h3>
+        <p>Celebrate your love with a romantic getaway.</p>
+        <p class="offer-price">From <span>$799</span></p>
+        <a href="#footer" class="offer-button">Book Now</a>
+      </div>
+
+      <!-- Family Getaway -->
+      <div class="offer-card animate__animated animate__fadeInRight">
+        <h3>Family Getaway</h3>
+        <p>Perfect for families, with activities for all ages.</p>
+        <p class="offer-price">From <span>$699</span></p>
+        <a href="#footer" class="offer-button">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2 class="animate__animated animate__fadeInUp">What Our Guests Say</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Hear from our satisfied guests about their unforgettable experiences.
+    </p>
+    <div class="testimonial-container">
+      <div class="testimonial-slide fade">
+        <blockquote>
+          "Absolutely stunning! The ocean view from our room was breathtaking, and the service was impeccable. We can't wait to come back!"
+        </blockquote>
+        <p class="guest-name">— Sarah Johnson</p>
+      </div>
+      <div class="testimonial-slide fade">
+        <blockquote>
+          "The best hotel experience we've ever had. The staff went above and beyond to make our stay special. Highly recommend!"
+        </blockquote>
+        <p class="guest-name">— Michael Smith</p>
+      </div>
+      <div class="testimonial-slide fade">
+        <blockquote>
+          "The infinity pool and spa were pure bliss. Perfect for a relaxing getaway. We loved every moment!"
+        </blockquote>
+        <p class="guest-name">— Emily Davis</p>
+      </div>
+      <div class="testimonial-slide fade">
+        <blockquote>
+          "The family suite was spacious and comfortable. Our kids had a blast, and we enjoyed the peace and quiet."
+        </blockquote>
+        <p class="guest-name">— David Wilson</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="contact">
+    <h2 class="animate__animated animate__fadeInUp">Book Now</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Reserve your stay with us today!
+    </p>
+    <form id="booking-form" class="animate__animated animate__fadeInUp animate__delay-1s">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <select id="room-type" required>
+        <option value="" disabled selected>Select Room Type</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="executive">Executive Suite</option>
+        <option value="family">Family Suite</option>
+      </select>
+      <div class="date-inputs">
+        <div class="date-group">
+          <span>From</span>
+          <input type="date" id="check-in" placeholder="From" required>
+        </div>
+        <div class="date-group">
+          <span>To</span>
+          <input type="date" id="check-out" placeholder="To" required>
+        </div>
+      </div>
+      <textarea placeholder="Special Requests" required draggable="false"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <!-- Footer Top Section -->
+      <div class="footer-top">
+        <!-- Logo and Description -->
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Coastal Horizon Hotel Logo" class="footer-logo">
+          <p class="footer-description">
+            Experience luxury by the sea. Coastal Horizon Hotel offers unparalleled hospitality, breathtaking views, and world-class amenities.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rooms">Rooms & Suites</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#offers">Special Offers</a></li>
+            <li><a href="#contact">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Shoreline Drive, Ocean Vista</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-envelope"></i> info@coastalhorizonhotel.com</li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2025 Coastal Horizon Hotel. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy-terms.html">Privacy Policy</a> |
+          <a href="privacy-terms.html">Terms of Service</a>
+        </div>
+        <p class="footer-credit">
+          Site Design by <a href="https://alectronic-solutions.github.io/home/" target="_blank">Alectronic Solutions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle">
+    <i class="fas fa-sun"></i> <!-- Sun icon (default for light mode) -->
+    <i class="fas fa-moon" style="display: none;"></i> <!-- Moon icon (hidden by default) -->
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
