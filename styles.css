@@ -12,7 +12,6 @@ header {
   background: rgba(40, 0, 40, 0.5); /* Dark purple with transparency */
   color: #fff;
   padding: 1rem 0;
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -23,6 +22,15 @@ header:hover {
   background: rgba(40, 0, 40, 0.9); /* Dark purple with less transparency on hover */
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header .logo img {
   height: 50px; /* Adjust the height as needed */
   width: auto; /* Maintain aspect ratio */
@@ -30,12 +38,14 @@ header .logo img {
 
 nav ul {
   list-style: none;
+  display: flex;
+  gap: 20px;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
 }
 
 nav ul li a {
@@ -47,6 +57,20 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ff007f; /* Neon pink on hover */
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 /* Hero Section with Video Background */
@@ -1059,6 +1083,42 @@ footer {
   .footer-bottom {
     flex-direction: column;
     gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(40, 0, 40, 0.9);
+    width: 200px;
+    height: calc(100vh - 60px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav ul.nav-active {
+    transform: translateX(0);
+  }
+
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.toggle .line2 {
+    opacity: 0;
+  }
+
+  .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
 
